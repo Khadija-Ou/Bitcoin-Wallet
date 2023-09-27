@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=SFProDisplay:wght@300;400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+$color-bg: #f3f6f9;
+$color-white: #ffffff;
+$color-primary: #aeb8c4;
+$color-primary-variant: #4c5968;
+
+$transition: all 400ms ease;
+
+$container-width-lg: 75%;
+$container-width-md: 86%;
+$container-width-sm: 90%;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'SFProDisplay', sans-serif;
+  background-color: $color-bg;
+  color: $color-white;
+  line-height: 1.7;
+}
