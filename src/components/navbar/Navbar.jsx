@@ -15,8 +15,8 @@ function NavBar() {
     <div>
       {/* Overlay for mobile menu */}
       {click && <div className='overlay' onClick={handleClick}></div>}
-      <nav className='navbar'>
-        <div className='nav-container'>
+      <nav className='navbar '>
+        <div className='nav-container page-container'>
           <div className='nav-arrow'>
             <IoIosArrowBack />
           </div>

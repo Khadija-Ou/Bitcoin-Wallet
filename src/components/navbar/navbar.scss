@@ -1,7 +1,11 @@
 /* Importing Global Styles */
 @import '../../index.scss';
 
-/* Navigation Bar ✅♦️❤️✅*/
+// Variables
+$primaryColor: $color-primary-variant;
+$mobileBreakpoint: 960px;
+
+/* Navigation Bar */
 .navbar {
   background-color: $color-white;
   height: 90px;
@@ -13,7 +17,7 @@
   z-index: 20;
 }
 
-/* Navigation Container ✅♦️❤️✅*/
+/* Navigation Container */
 .nav-container {
   display: flex;
   justify-content: space-between;
@@ -23,10 +27,9 @@
   max-width: 1500px;
 }
 
-/* Navigation Logo ✅♦️❤️✅*/
+/* Navigation Logo */
 .nav-logo {
-  color: $color-primary-variant;
-  margin-left: 20px;
+  color: $primaryColor;
   cursor: pointer;
   text-decoration: none;
   font-size: 34px;
@@ -34,31 +37,12 @@
   flex-grow: 1;
 }
 
-/* Navigation Menu  ✅♦️❤️✅*/
+/* Navigation Menu */
 .nav-menu {
   display: flex;
   list-style: none;
-
-  /* Navigation Item Hover Effect */
+  gap: 20px;
   .nav-item {
-    line-height: 40px;
-    padding: 0rem 1rem 0rem 1rem;
-
-    &:after {
-      content: '';
-      display: block;
-      height: 3px;
-      width: 0;
-      background: transparent;
-      transition: width 0.7s ease, background-color 0.5s ease;
-    }
-
-    &:hover:after {
-      width: 100%;
-      background: $color-primary-variant;
-    }
-
-    /* Navigation Links */
     .nav-links {
       text-decoration: none;
       display: flex;
@@ -66,10 +50,11 @@
       align-items: center;
       padding: 0.5rem 1rem;
       height: 100%;
-      color: $color-primary-variant;
-
+      color: $primaryColor;
+      padding: 1rem;
       &.remove {
         color: red;
+        border: 1px solid black;
       }
     }
   }
@@ -82,12 +67,13 @@
 }
 
 /* Media Query for Mobile Devices */
-@media screen and (max-width: 960px) {
+@media screen and (max-width: $mobileBreakpoint) {
   .nav-menu {
     display: flex;
+    gap: 0;
     flex-direction: column;
     width: 60%;
-    border: 1px solid $color-primary-variant;
+    border: 1px solid $primaryColor;
     border-radius: 10px;
     position: absolute;
     top: 90px;
@@ -107,14 +93,14 @@
   .nav-links {
     padding: 1.5rem;
     width: 100%;
-    border-bottom: 1px solid $color-primary;
+    border-bottom: 1px solid $primaryColor;
     &.remove {
-      border-bottom: none;
+      border: 0 !important;
     }
   }
 
   .nav-logo {
-    flex: 3;
+    flex: 6;
     text-align: center;
     font-size: 24px;
   }
@@ -128,7 +114,7 @@
     align-items: center;
     justify-content: center;
     font-size: 30px;
-    color: $color-primary;
+    color: $primaryColor;
   }
 }
 
