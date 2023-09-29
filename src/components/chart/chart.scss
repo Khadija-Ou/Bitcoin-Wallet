@@ -1,0 +1,35 @@
+.chat-container {
+  width: 100%;
+  height: 100%;
+}
+.line-chart {
+  color: black;
+  display: flex;
+  justify-content: space-around;
+  .line-red {
+    display: flex;
+    .red {
+      background: red;
+      width: 30px;
+      height: 30px;
+    }
+  }
+  .line-green {
+    display: flex;
+    .green {
+      background: rgb(51, 255, 0);
+      width: 30px;
+      height: 30px;
+    }
+  }
+}
+.orange-dot {
+  color: black;
+  position: absolute;
+  bottom: 15rem;
+  left: 10rem;
+  z-index: 999;
+}
+.chartGrid {
+  stroke: rgb(228, 225, 225);
+}
