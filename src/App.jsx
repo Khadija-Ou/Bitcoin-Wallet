@@ -2,7 +2,7 @@ import React from 'react'
 import Nav from './components/navbar/Navbar'
 import Featured from './components/featured/Featured'
 import Tabs from './components/tabs/Tabs'
-import Chart from './components/chart/Chart'
+import TradeButtons from './components/tradeButtons/TradeButtons'
 
 const App = () => {
   return (
@@ -10,7 +10,7 @@ const App = () => {
       <Nav />
       <Featured />
       <Tabs />
-      {/* <Chart title='Last 6 Months (Revenue)' aspect={3 / 1} /> */}
+      <TradeButtons />
     </>
   )
 }
