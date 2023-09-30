@@ -69,7 +69,8 @@ $mobileBreakpoint: 960px;
 /* Media Query for Mobile Devices */
 @media screen and (max-width: $mobileBreakpoint) {
   .nav-menu {
-    display: flex;
+    visibility: hidden;
+    overflow: hidden;
     gap: 0;
     flex-direction: column;
     width: 60%;
@@ -77,11 +78,12 @@ $mobileBreakpoint: 960px;
     border-radius: 10px;
     position: absolute;
     top: 90px;
-    left: 110%;
+    left: -100%;
     opacity: 1;
     transition: all 0.5s ease;
 
     &.active {
+      visibility: visible;
       background: $color-white;
       left: 33%;
       opacity: 1;
