@@ -12,8 +12,10 @@
 
 $color-bg: #f3f6f9;
 $color-white: #ffffff;
-$color-primary: #aeb8c4;
-$color-primary-variant: #4c5968;
+$color-primary: #4c5968;
+$color-primary-variant: #aeb8c4;
+$color-red: #ee225d;
+$color-orange: #ff991f;
 
 $transition: all 400ms ease;
 
@@ -22,6 +24,7 @@ $container-width-md: 86%;
 $container-width-sm: 90%;
 
 $mobileBreakpoint: 768px;
+
 html {
   scroll-behavior: smooth;
 }
@@ -41,4 +44,49 @@ body {
   .page-container {
     padding: 0 25px;
   }
+}
+.primary-button .secondary-button {
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.primary-button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  background-color: $color-orange;
+  color: $color-white;
+  border: 1px solid $color-orange;
+}
+.secondary-button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  background-color: $color-white;
+  color: $color-orange;
+  border: 1px solid $color-orange;
+}
+
+.primary-button:hover {
+  background-color: $color-white;
+  border: 1px solid $color-orange;
+  color: $color-orange;
+}
+.secondary-button:hover {
+  background-color: $color-orange;
+  color: $color-white;
+}
+
+.tab-buttom {
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  background-color: $color-white;
+  color: $color-primary;
+  border: 1px solid $color-orange;
 }

@@ -33,7 +33,7 @@ const Tabs = () => {
       <div className='tabs'>
         <div className='chart-container  tabs-chart'>
           <div
-            className={tab === 1 ? 'tab active' : 'tab'}
+            className=`tab-buttom {tab === 1 ? 'tab active' : 'tab'}`
             onClick={() => toggle(1)}
           >
             Bitcoin

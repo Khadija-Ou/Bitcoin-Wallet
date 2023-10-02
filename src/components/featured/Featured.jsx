@@ -22,14 +22,14 @@ const Featured = () => {
             <p>BTC</p>
           </div>
 
-          <span className='btc-price'>3.68823823887723 BTC</span>
+          <span className='btc-price'>3.529020 BTC</span>
 
           <div className='top-info'>
-            <span className='price'>$19.1882873</span>
-            <span className='change'>-2.23%</span>
+            <span className='price'>$19.153 USD</span>
+            <span className='change'>- 2.23%</span>
           </div>
           <div className='top-icon' onClick={toggle}>
-            <IoIosArrowDown />
+            <IoIosArrowDown color='#aeb8c4' fontSize='1.5em' />
           </div>
         </div>
 
@@ -37,12 +37,11 @@ const Featured = () => {
           <div className='bottom'>
             <p>
               Lorem ipsum, dolor sit amet consectetur adipisicing
-              elit. In itaque debitis veritatis obcaecati sunt illo
-              vero id earum quidem reiciendis.
+              elit.
             </p>
             <div className='bottom-btns'>
-              <button className='buy-btn'>Buy</button>
-              <button lassName='sell-btn'>Sell</button>
+              <button className='primary-button'>Buy</button>
+              <button className='secondary-button'>Sell</button>
             </div>
           </div>
         )}

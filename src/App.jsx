@@ -4,6 +4,7 @@ import Tabs from './components/tabs/Tabs'
 import TradeButtons from './components/tradeButtons/TradeButtons'
 import BottomNav from './components/bottomNav/BottomNav'
 import NavBar from './components/navbar/Navbar'
+import './index.scss'
 
 const App = () => {
   return (
