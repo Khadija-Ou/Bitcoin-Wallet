@@ -1,20 +1,41 @@
+@import "../../index.scss";
+
 .trade-buttons {
   display: flex;
   justify-content: space-between;
-  color: black;
+  gap: 15px;
+  color: $color-primary;
 
-  .sell-button.buy-button {
+  .buy-button {
     display: flex;
     flex-direction: column;
-  }
-  .buy-button {
+    align-items: center;
+    gap: 10px;
     padding: 20px;
-    background: red;
+    margin: 10px 0 10px 0;
+    background-color: $color-white;
+    color: $color-primary;
+    border-radius: 10px;
+    flex: 2;
+    -webkit-box-shadow: 2px 4px 20px 1px rgba(0, 0, 0, 0.47);
+    box-shadow: 2px 4px 20px 1px rgba(164, 164, 164, 0.47);
+    padding: 15px;
   }
 
   .sell-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
     padding: 20px;
-    background: rgb(115, 255, 0);
+    margin: 10px 0 10px 0;
+    background-color: $color-white;
+    color: $color-primary;
+    border-radius: 10px;
+    flex: 2;
+    -webkit-box-shadow: 2px 4px 20px 1px rgba(0, 0, 0, 0.47);
+    box-shadow: 2px 4px 20px 1px rgba(164, 164, 164, 0.47);
+    padding: 15px;
   }
 
   .coin-image {

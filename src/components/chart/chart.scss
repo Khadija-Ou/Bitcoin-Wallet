@@ -1,9 +1,11 @@
+@import "../../index.scss";
+
 .chat-container {
   width: 100%;
   height: 100%;
 }
 .line-chart {
-  color: black;
+  color: $color-primary-variant;
   display: flex;
 
   justify-content: space-around;

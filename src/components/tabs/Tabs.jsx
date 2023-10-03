@@ -67,16 +67,16 @@ const Tabs = () => {
         </div>
         <div className="tabs-content">
           <div className={tab === 1 ? "content active" : "content"}>
-            <Chart Higher="$29939" Lower="$2,939" aspect={2 / 1} />
+            <Chart Higher="$29939" Lower="$2,939" aspect={2.5 / 1} />
           </div>
           <div className={tab === 2 ? "content active" : "content"}>
-            <Chart Higher="$9,999" Lower="$1,9939" aspect={2 / 1} />
+            <Chart Higher="$9,999" Lower="$1,9939" aspect={2.5 / 1} />
           </div>
           <div className={tab === 3 ? "content active" : "content"}>
-            <Chart Higher="$10,939" Lower="$2,939" aspect={2 / 1} />
+            <Chart Higher="$10,939" Lower="$2,939" aspect={2.5 / 1} />
           </div>
           <div className={tab === 4 ? "content active" : "content"}>
-            <Chart Higher="$11,999" Lower="$3,993" aspect={2 / 1} />
+            <Chart Higher="$11,999" Lower="$3,993" aspect={2.5 / 1} />
           </div>
         </div>
       </div>
