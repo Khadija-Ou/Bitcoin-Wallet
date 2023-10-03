@@ -1,31 +1,32 @@
-.tabs-chart {
+@import "../../index.scss";
+
+.tabs {
   display: flex;
-  justify-content: space-between;
-  .tab {
-    cursor: pointer;
-    border: 1px solid #ccc;
-    background-color: #f2f2f2;
-    /* Add other tab styles here */
+  flex-direction: column;
 
-    &.active {
-      background-color: #007bff;
-      color: #fff;
-      /* Add styles for the active tab here */
-    }
+  .tabs-chart {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
   }
-}
 
-.tabs-content {
-  /* Add styles for the content container if needed */
+  .tabs-content {
+    margin: 20px 0 20px 0;
+    background-color: $color-white;
+    color: $color-primary;
+    border-radius: 10px;
 
-  .content {
-    display: none;
-    /* Add styles for the content here */
+    flex: 2;
+    -webkit-box-shadow: 2px 4px 20px 1px rgba(0, 0, 0, 0.47);
+    box-shadow: 2px 4px 20px 1px rgba(164, 164, 164, 0.47);
+    padding: 20px 0 20px 0;
+    .content {
+      display: none;
 
-    &.active {
-      display: block;
-      background: rgb(255, 244, 220);
-      /* Add styles for the active content here */
+      &.active {
+        display: block;
+        background: rgb(255, 244, 220);
+      }
     }
   }
 }
