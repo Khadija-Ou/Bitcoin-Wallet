@@ -23,6 +23,8 @@
       color: $color-primary-variant;
       font-size: 1.5rem;
       transition: color 0.3s;
+      display: flex;
+      align-items: center;
     }
 
     .icon:hover {
