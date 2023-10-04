@@ -1,54 +1,65 @@
-import React from 'react'
-import './bottomNav.scss'
-import { IoIosArrowDown } from 'react-icons/io'
-import { useState } from 'react'
+import React from "react";
+import "./bottomNav.scss";
+import { IoNotifications, IoSettingsSharp } from "react-icons/io5";
+import { GiMultiDirections } from "react-icons/gi";
+import { RiBook2Fill } from "react-icons/ri";
+import { useState } from "react";
 
 const BottomNav = () => {
-  const [activeBottomNav, setActiveBottomNav] = useState('#')
+  const [activeBottomNav, setActiveBottomNav] = useState("#");
   return (
-    <div className='page-container'>
-      <div className='BottomNav'>
+    <div className="BottomNav">
+      <div className="BottomNav-container page-container">
         <a
-          href='#'
+          href="#"
           onClick={() => {
-            setActiveBottomNav('#')
+            setActiveBottomNav("#");
           }}
-          className={activeBottomNav === '#' ? 'active' : ''}
+          className={activeBottomNav === "#" ? "active" : ""}
         >
-          <IoIosArrowDown />
+          <div className="icon">
+            <RiBook2Fill size={28} />
+          </div>
         </a>
+
         <a
-          href='#about'
+          href="#location"
           onClick={() => {
-            setActiveBottomNav('#about')
+            setActiveBottomNav("#location");
           }}
-          className={activeBottomNav === '#about' ? 'active' : ''}
+          className={activeBottomNav === "#location" ? "active" : ""}
         >
-          <IoIosArrowDown />
+          <div className="icon">
+            <GiMultiDirections size={28} />
+          </div>
         </a>
+
         <a
-          href='#experience'
+          href="#notification"
           onClick={() => {
-            setActiveBottomNav('#experience')
+            setActiveBottomNav("#notification");
           }}
-          className={
-            activeBottomNav === '#experience' ? 'active' : ''
-          }
+          className={activeBottomNav === "#notification" ? "active" : ""}
         >
-          <IoIosArrowDown />
+          <div className="icon">
+            <IoNotifications size={28} />
+          </div>
         </a>
+
         <a
-          href='#services'
+          href="#settings"
           onClick={() => {
-            setActiveBottomNav('#services')
+            setActiveBottomNav("#settings");
           }}
-          className={activeBottomNav === '#services' ? 'active' : ''}
+          className={activeBottomNav === "#settings" ? "active" : ""}
         >
-          <IoIosArrowDown />
+          <div className="icon">
+            <IoSettingsSharp size={28} />
+          </div>
         </a>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default BottomNav
+export default BottomNav;
