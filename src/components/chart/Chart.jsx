@@ -2,12 +2,12 @@ import "./chart.scss";
 import { ResponsiveContainer, Tooltip, Label, AreaChart, Area } from "recharts";
 
 const data = [
-  { name: "January", Total: 3200 },
-  { name: "February", Total: 6100 },
-  { name: "March", Total: 5000 },
-  { name: "April", Total: 7000 },
-  { name: "May", Total: 7900 },
-  { name: "June", Total: 8000 },
+  { name: "January", Total: 2000 },
+  { name: "February", Total: 2500 },
+  { name: "March", Total: 2500 },
+  { name: "April", Total: 2600 },
+  { name: "May", Total: 2900 },
+  { name: "June", Total: 2800 },
 ];
 
 const Chart = ({ aspect, Lower, Higher }) => {
@@ -19,7 +19,7 @@ const Chart = ({ aspect, Lower, Higher }) => {
           <div className="red"></div>Lower {Lower}
         </div>
         <div className="line-green">
-          <div className="green"></div>Higher{Higher}
+          <div className="green"></div>Higher {Higher}
         </div>
       </div>
       <ResponsiveContainer width="100%" aspect={aspect}>
@@ -49,8 +49,8 @@ const Chart = ({ aspect, Lower, Higher }) => {
             dataKey="Total"
             stroke="#ff8f17"
             strokeWidth={3}
-            fillOpacity={1}
-            fill="url(#total)"
+            fillOpacity={100}
+            fill="#fff7ee"
           />
         </AreaChart>
       </ResponsiveContainer>

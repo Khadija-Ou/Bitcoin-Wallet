@@ -25,22 +25,24 @@
         align-items: center;
         gap: 10px;
         h2 {
-          font-size: 17px;
+          font-size: 12.84pt;
+          font-weight: 1500;
         }
       }
       p {
         color: $color-primary-variant;
+        font-size: 12.84pt;
       }
     }
     .btc-price {
-      font-size: 40px;
+      font-size: 30pt;
     }
     .top-info {
       display: flex;
       justify-content: space-between;
       align-items: center;
       .price {
-        font-size: 24px;
+        font-size: 18pt;
         color: $color-primary-variant;
       }
       .change {

@@ -3,10 +3,12 @@
 .chat-container {
   width: 100%;
   height: 100%;
+  border-radius: 10px;
 }
 .line-chart {
   color: $color-primary-variant;
   display: flex;
+  margin-bottom: 20px;
 
   justify-content: space-around;
   .line-red {
@@ -26,7 +28,7 @@
     align-items: center;
     gap: 10px;
     .green {
-      background: rgb(51, 255, 0);
+      background: $color-green;
       width: 10px;
       height: 10px;
       border-radius: 100%;

@@ -17,7 +17,7 @@ function NavBar() {
       {click && <div className="overlay" onClick={handleClick}></div>}
       <nav className="navbar ">
         <div className="nav-container page-container">
-          <div className="nav-arrow">
+          <div className="nav-icon">
             <IoIosArrowBack />
           </div>
 
@@ -31,7 +31,14 @@ function NavBar() {
                 Edit
                 <AiOutlineCreditCard className="nav-link-icon" />
               </a>
-              <hr className="hr-line" />
+              <hr
+                style={{
+                  background: "#aeb8c4",
+                  height: "1px",
+                  width: "calc(100% - 1rem)",
+                  marginLeft: "auto",
+                }}
+              />{" "}
             </li>
             <li className="nav-item">
               <a href="/" className="nav-links" onClick={handleClick}>

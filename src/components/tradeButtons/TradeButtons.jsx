@@ -1,6 +1,6 @@
 import React from "react";
 import "./tradeButtons.scss";
-import DollarOrange from "../../assets/dollarOrange.png";
+import DollarPink from "../../assets/dollarPink.png";
 import DollarBlue from "../../assets/dollarBlue.png";
 
 const BuySellButtons = () => {
@@ -12,7 +12,7 @@ const BuySellButtons = () => {
           Buy BTC
         </div>
         <div className="sell-button">
-          <img src={DollarOrange} alt="" className="coin-image" />
+          <img src={DollarPink} alt="" className="coin-image" />
           Sell BTC
         </div>
       </div>
