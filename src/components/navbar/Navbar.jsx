@@ -31,47 +31,53 @@ function NavBar() {
                 Edit
                 <AiOutlineCreditCard className="nav-link-icon" />
               </a>
-              <hr
-                style={{
-                  background: "#aeb8c4",
-                  height: "1px",
-                  width: "calc(100% - 1rem)",
-                  marginLeft: "auto",
-                }}
-              />{" "}
+              {window.innerWidth <= 768 && (
+                <hr
+                  style={{
+                    background: "#aeb8c4",
+                    height: "1px",
+                    width: "calc(100% - 1rem)",
+                    marginLeft: "auto",
+                  }}
+                />
+              )}
             </li>
             <li className="nav-item">
               <a href="/" className="nav-links" onClick={handleClick}>
                 Courier info
                 <BiBookContent className="nav-link-icon" />
               </a>
-              <hr
-                style={{
-                  background: "#aeb8c4",
-                  height: "1px",
-                  width: "calc(100% - 1rem)",
-                  marginLeft: "auto",
-                }}
-              />
+              {window.innerWidth <= 768 && (
+                <hr
+                  style={{
+                    background: "#aeb8c4",
+                    height: "1px",
+                    width: "calc(100% - 1rem)",
+                    marginLeft: "auto",
+                  }}
+                />
+              )}
             </li>
             <li className="nav-item">
               <a href="/" className="nav-links" onClick={handleClick}>
                 Share
                 <LiaUploadSolid className="nav-link-icon" />
               </a>
-              <hr
-                style={{
-                  background: "#aeb8c4",
-                  height: "1px",
-                  width: "calc(100% - 1rem)",
-                  marginLeft: "auto",
-                }}
-              />
+              {window.innerWidth <= 768 && (
+                <hr
+                  style={{
+                    background: "#aeb8c4",
+                    height: "1px",
+                    width: "calc(100% - 1rem)",
+                    marginLeft: "auto",
+                  }}
+                />
+              )}
             </li>
             <li className="nav-item">
               <a href="/" className="nav-links remove" onClick={handleClick}>
                 Remove
-                <IoRemoveCircleOutline className="nav-link-icon" />
+                <IoRemoveCircleOutline className="nav-link-icon icon-red" />
               </a>
             </li>
           </ul>

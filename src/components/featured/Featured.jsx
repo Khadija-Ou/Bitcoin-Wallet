@@ -35,7 +35,10 @@ const Featured = () => {
 
         {show && (
           <div className="bottom">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            <p>
+              Start your cryptocurrency journey now. Click 'Buy' to invest with
+              confidence.
+            </p>
             <div className="bottom-btns">
               <button className="primary-button">Buy</button>
               <button className="secondary-button">Sell</button>
